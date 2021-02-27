@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Actix web</title>
+</head>
+<body>
+  <p>
+  <!-- Copy-pasted from: https://github.com/djc/askama/blob/main/testing/tests/loops.rs#L121 -->
+    {% for (i, j) in (0..10).zip(10..20).zip(30..40) %}{{ i.0 }} {{ i.1 }} {{ j }} {% endfor %}
+  </p>
+</body>
+</html>
